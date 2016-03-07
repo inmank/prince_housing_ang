@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    text-align: center;
+    background-image: url("../resources/bgTile.jpg");
+    background-repeat: repeat;
+}
+
+#header>h1 {
+    color: whitesmoke;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1>span {
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#footer {
+    text-align: center;
+}
+
+#copyright {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#sidebar {
+    float: right;
+}
+
+#content {
+    height: 800px;
+    margin: 0 auto;
+}
+
+#home {
+    width: 80%;
+    height: auto;
+    position: relative;
+    box-shadow: 10px 10px 5px #888888;
+    background-image: url("../resources/bgTile.jpg");
+    background-repeat: repeat;
+}
+
+.centerDiv {
+    margin: 10% auto;
+}
+
+#contentText {
+    color: white;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.buttonpanel {
+    margin: 0 auto; 
+    width: 80%;
+    text-align:center;
+    padding: 20px; 
+}
+
+.textalignright {
+    text-align: right;
+}

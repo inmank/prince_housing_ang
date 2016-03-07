@@ -1,0 +1,63 @@
+<div class="row centerDiv">
+    <div class="col-md-7 col-md-offset-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Please input the following mandatory fields and click on the "Submit" button to check your eligibility to process the application.</h3>
+            </div>
+            <div class="panel-body form-group">
+                <form class="form-horizontal" ng-submit="submitData()">
+                    <div class="form-group">
+                        <label for="firstname" class="control-label col-sm-4">First Name</label>
+                        <div class="col-sm-4">
+                            <input type="text" ng-model="user.firstName" class="form-control" id="firstname" placeholder="Enter First name..." required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname" class="control-label col-sm-4">Last Name</label>
+                        <div class="col-sm-4">
+                            <input type="text" ng-model="user.lastname" class="form-control" id="lastname" placeholder="Enter Last name...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ssn" class="control-label col-sm-4">Social Security Number (SSN)</label>
+                        <div class="col-sm-3">
+                            <input type="text" ng-model="user.ssn" class="form-control" id="ssn" placeholder="Enter SSN...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="region" class="control-label col-sm-4">City</label>
+                        <div class="col-sm-3">
+                            <select class="form-control" ng-model="user.region" ng-options="item.id as item.name for item in allowedRegions">
+                                <option value="">Select County</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipcode" class="control-label col-sm-4">ZIP Code</label>
+                        <div class="col-sm-2">
+                            <input type="text" ng-model="user.zipcode" class="form-control" id="zipcode" placeholder="Enter ZIP...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="salary" class="control-label col-sm-4">Annual Salary for the total household</label>
+                        <div class="col-sm-3">
+                            <input type="text" ng-model="user.salaryTotal" class="form-control" id="salary" placeholder="Enter Salary...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="people" class="control-label col-sm-4">Number of people in the Household</label>
+                        <div class="col-sm-2">
+                            <input type="number" ng-model="user.peopleTotal" class="form-control" id="people" min="1" max="10" default="1">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="panel-footer">
+                <div class="textalignright">
+                    <a class="btn btn-default" href="#" role="button">Reset</a>
+                    <a class="btn btn-primary" href="#" role="button">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
