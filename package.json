@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/inmank/prince_housing_ang#readme",
   "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
     "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
     "express": "^4.13.4"
   }
 }
