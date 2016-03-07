@@ -1,17 +1,23 @@
 {
-  "name": "angular-seed",
-  "private": true,
-  "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
-  "license": "MIT",
-  "devDependencies": {
-  },
-  "scripts": {
-  },
+  "name": "princehousing",
+  "version": "1.0.0",
+  "description": "Code for priceton Hackaton",
   "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inmank/prince_housing_ang.git"
+  },
+  "author": "Karthik M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inmank/prince_housing_ang/issues"
+  },
+  "homepage": "https://github.com/inmank/prince_housing_ang#readme",
   "dependencies": {
-    "express": "~4.0.0",
-    "body-parser": "~1.0.1"
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
   }
 }
